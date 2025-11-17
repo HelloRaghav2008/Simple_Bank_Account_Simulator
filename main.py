@@ -167,8 +167,8 @@ class LoginFrame(ttk.Frame):
         btn_frame = ttk.Frame(self)
         btn_frame.pack()
 
-        ttk.Button(btn_frame, text="Log In", command=self.handle_login).pack(side=tk.LEFT, padx=5)
-        ttk.Button(btn_frame, text="Back", command=self.go_back).pack(side=tk.LEFT, padx=5)
+        ttk.Button(btn_frame, text="Log In", command=self.handle_login).pack(side="left", padx=5)
+        ttk.Button(btn_frame, text="Back", command=self.go_back).pack(side="left", padx=5)
 
     def go_back(self):
         """Clears fields and goes back to welcome"""
@@ -229,8 +229,8 @@ class CreateAccountFrame(ttk.Frame):
         btn_frame = ttk.Frame(self)
         btn_frame.pack()
 
-        ttk.Button(btn_frame, text="Create", command=self.handle_create).pack(side=tk.LEFT, padx=5)
-        ttk.Button(btn_frame, text="Back", command=self.go_back).pack(side=tk.LEFT, padx=5)
+        ttk.Button(btn_frame, text="Create", command=self.handle_create).pack(side="left", padx=5)
+        ttk.Button(btn_frame, text="Back", command=self.go_back).pack(side="left", padx=5)
 
     def go_back(self):
         self.name_entry.delete(0, 'end')
